@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font: normal, Arial 20pt; 
+}
+
+body {
+    background-color: lightslategray;
+}
+
+main {
+    background-color: white;
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+main h1 {
+    text-align: center;
+}
+
+main div#bnt{
+    width: 200px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+main #txtn1 {
+    float: left;
+    width: 46%;
+}
+main #txtn2 {
+    float: right;
+    width: 46%;
+}
+
+
+main input[type=button] {
+   display: block;
+   margin-top: 10px;
+   background-color: rgba(0, 0, 0, 0.466);
+   color: white;
+
+}
+main input {
+    width: 50px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.466);
+    color: white;
+}
+main div#res {
+    margin-top: 10px;
+    text-align: center;
+}

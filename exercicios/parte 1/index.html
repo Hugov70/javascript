@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Dia</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <h1>Hora do Dia</h1>
+    <main>
+        <div id="hora">
+            Agora são 
+        </div>
+        <div id="imagem">
+            <img src="imagens/manha.jpg" alt="foto manha">
+        </div>
+    </main>
+
+    <script>
+        var agora = new Date()
+        var hora = agora.getHours()
+        var th = document.getElementById('hora')
+        var ima = document.getElementById('imagem')
+        
+        th.innerHTML = `Agora são ${hora} horas`
+        if (hora < 12) {
+            ima.innerHTML = `<img src="imagens/manha.jpg" alt="foto manha">`
+            document.body.style.background = '#FECB00'
+        } else if (hora >= 12 && hora < 18) {
+            ima.innerHTML = `<img src="imagens/tarde.jpg" alt="foto tarde">`
+            document.body.style.background = '#7E91AF'
+        } 
+        else {
+            ima.innerHTML = `<img src="imagens/noite.jpg" alt="foto noite">`
+            document.body.style.background = '#52416B'
+        }
+    </script>
+</body>
+</html>

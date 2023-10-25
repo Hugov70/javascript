@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino 1</title>
+</head>
+<body>
+    <h1>Treino 001</h1>
+    
+
+    <script>
+        var nome = window.prompt('Qual o seu nome?')
+        var sal = window.prompt('Qual o seu salário em R$?')
+        document.write(`Nome: ${nome} <br>`)
+        document.write(`Seu nome tem ${nome.length} letras <br>`)
+        document.write(`Seu nome em maiúsculas ${nome.toUpperCase()} <br>`)
+        document.write(`Seu nome em minúsculas ${nome.toLowerCase()} <br>`)
+        document.write(`Salário: ${sal.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})} `)
+
+    </script>
+</body>
+</html>
